@@ -1,0 +1,147 @@
+
+{% extends "auctions/layout.html" %}
+{% load static %}   
+{% block body %}
+
+
+
+<section class="home" id="home">
+    <div class="home-text">
+        <h1>We Have Everything<br>Your <span>Car</span> Needs</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Laborum </p>
+        <a href="#" class="btn">Discover Now</a>
+    </div>
+</section>
+<section class="cars" id="cars">
+    <div class="heading">
+        <span>All Cars</span>
+        <h2>We have variety of cars</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum odit</p>
+    </div>
+</section>
+<div class="cars-container container">
+    <!--Box1-->
+    <div class="box">
+        <img src={% static 'auctions/img/carspng/ertiga.png' %} alt="">
+        <h2>Ertiga</h2>
+    </div>
+    
+    <!--Box2-->
+    <div class="box">
+        <img src={% static 'auctions/img/carspng/Seltos.png' %} alt="">
+        <h2>Seltos</h2>
+    </div>
+    <!--Box3-->
+    <div class="box">
+        <img src={% static 'auctions/img/carspng/Harrier.png' %} alt="">
+        <h2>Harrier</h2>
+    </div>
+    <!--Box4-->
+    <div class="box">
+        <img src={% static 'auctions/img/carspng/audi q2.png' %} alt="">
+        <h2>Audi Q2</h2>
+    </div>
+    <!--Box5-->
+    <div class="box">
+        <img src={% static 'auctions/img/carspng/i20.png' %} alt="">
+        <h2>Porsche Car</h2>
+    </div>
+    <!--Box6-->
+    <div class="box">
+        <img src={% static 'auctions/img/carspng/wrv.png' %} alt="">
+        <h2>Porsche Car</h2>
+    </div>
+</div>
+<!--About-->
+<section class="about container" id="about">
+    <div class="about-img">
+        <img src={% static 'auctions/img/carspng/WagonR.png' %} alt="">
+    </div>
+    <div class=" about-text ">
+        <span>About us</span>
+        <h2>Affordable Prices With <br>Quality Cars</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, magni.</p>
+        <a href="# " class="btn ">Learn More</a>
+    </div>
+</section>
+
+</section>
+<!--Blogs Container-->
+<div class="section blogs" id="blogs">
+    <div class="heading">
+        <span>Our blogs</span>
+        <h2>Our blog content</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, molestias.</p>
+    </div>
+</div>
+<div class="blog-container container">
+    <!--Box 1-->
+    <div class="box">
+        <img src={% static "auctions/img/car1.jpg" %} alt="">
+        <span>Feb 14 2021</span>
+        <h3>How to get the best car at the lowest price</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, molestiae.</p>
+        <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+    <!--Box 2-->
+    <div class="box">
+        <img src={% static "auctions/img/car4.jpg" %} alt="">
+        <span>Feb 14 2021</span>
+        <h3>How to get the best car at the lowest price</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, molestiae.</p>
+        <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+    <!--Box 3-->
+    <div class="box">
+        <img src={% static "auctions/img/car3.jpg" %} alt="">
+        <span>Feb 14 2021</span>
+        <h3>How to get the best car at the lowest price</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, molestiae.</p>
+        <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+</div>
+<!--Footer-->
+<section class="footer">
+    <div class="footer-container container">
+        <div class="footer-box">
+            <a href="#" class="logo">Car<span>Point</span></a>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/shashank-r-856824174/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/ShashankRaii"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/shashank.rai.7792052/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/shashankraiiii/"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Page</h3>
+            <a href="#">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#parts">Parts</a>
+            <a href="#">Sales</a>
+        </div>
+        <div class="footer-box">
+            <h3>Legal</h3>
+            <a href="#">Privacy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Cookie Policy</a>
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>New Delhi</p>
+            <p>Mumbai</p>
+            <p>Banglore</p>
+        </div>
+    </div>
+</section>
+<!--Copyright-->
+<div class="copyright">
+    <p>&#169; Carpoint SFIT All Right Reserved</p>
+</div>
+<script src=" script.js "></script>
+
+
+{% comment %} <div class="about-img">
+<img src="img/about.png" alt=">
+</div> {% endcomment %}
+
+{% endblock %}

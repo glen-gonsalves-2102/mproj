@@ -1,0 +1,19 @@
+{% extends 'auctions/layout.html' %}
+
+{% block title %}
+Categories
+{% endblock %}
+
+{% block body %}
+<div class="grid-container text-center">
+    {% for category in categories %}
+    <a href="{% url 'filter' category.name %}">
+        <div class="grid-item">
+            {{ category.name|title }}
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
